@@ -12,6 +12,10 @@
 		86005AEA1F6046330085B623 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86005AE91F6046330085B623 /* ViewController.m */; };
 		86005AEC1F6046330085B623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86005AEB1F6046330085B623 /* Assets.xcassets */; };
 		86005AEF1F6046330085B623 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86005AED1F6046330085B623 /* Main.storyboard */; };
+		8619AB1F1F605FB80093B0B8 /* GPXParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8619AB181F605FB80093B0B8 /* GPXParser.m */; };
+		8619AB201F605FB80093B0B8 /* GPXRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 8619AB1A1F605FB80093B0B8 /* GPXRoute.m */; };
+		8619AB211F605FB80093B0B8 /* GPXTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 8619AB1C1F605FB80093B0B8 /* GPXTrack.m */; };
+		8619AB221F605FB80093B0B8 /* GPXWaypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 8619AB1E1F605FB80093B0B8 /* GPXWaypoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,16 @@
 		86005AEB1F6046330085B623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86005AEE1F6046330085B623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86005AF01F6046330085B623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8619AB161F605FB80093B0B8 /* GPXKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXKit.h; sourceTree = "<group>"; };
+		8619AB171F605FB80093B0B8 /* GPXParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXParser.h; sourceTree = "<group>"; };
+		8619AB181F605FB80093B0B8 /* GPXParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXParser.m; sourceTree = "<group>"; };
+		8619AB191F605FB80093B0B8 /* GPXRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXRoute.h; sourceTree = "<group>"; };
+		8619AB1A1F605FB80093B0B8 /* GPXRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXRoute.m; sourceTree = "<group>"; };
+		8619AB1B1F605FB80093B0B8 /* GPXTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXTrack.h; sourceTree = "<group>"; };
+		8619AB1C1F605FB80093B0B8 /* GPXTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXTrack.m; sourceTree = "<group>"; };
+		8619AB1D1F605FB80093B0B8 /* GPXWaypoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPXWaypoint.h; sourceTree = "<group>"; };
+		8619AB1E1F605FB80093B0B8 /* GPXWaypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPXWaypoint.m; sourceTree = "<group>"; };
+		86E46D181F62FA610022F2D4 /* GPX Combiner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "GPX Combiner.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,8 @@
 		86005AE11F6046330085B623 /* GPX Combiner */ = {
 			isa = PBXGroup;
 			children = (
+				86E46D181F62FA610022F2D4 /* GPX Combiner.entitlements */,
+				8619AB151F605FB80093B0B8 /* GPXParser */,
 				86005AE21F6046330085B623 /* AppDelegate.h */,
 				86005AE31F6046330085B623 /* AppDelegate.m */,
 				86005AE81F6046330085B623 /* ViewController.h */,
@@ -74,6 +90,22 @@
 				86005AE61F6046330085B623 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8619AB151F605FB80093B0B8 /* GPXParser */ = {
+			isa = PBXGroup;
+			children = (
+				8619AB161F605FB80093B0B8 /* GPXKit.h */,
+				8619AB171F605FB80093B0B8 /* GPXParser.h */,
+				8619AB181F605FB80093B0B8 /* GPXParser.m */,
+				8619AB191F605FB80093B0B8 /* GPXRoute.h */,
+				8619AB1A1F605FB80093B0B8 /* GPXRoute.m */,
+				8619AB1B1F605FB80093B0B8 /* GPXTrack.h */,
+				8619AB1C1F605FB80093B0B8 /* GPXTrack.m */,
+				8619AB1D1F605FB80093B0B8 /* GPXWaypoint.h */,
+				8619AB1E1F605FB80093B0B8 /* GPXWaypoint.m */,
+			);
+			path = GPXParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +141,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 27PHVB8UWB;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -148,8 +185,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				86005AEA1F6046330085B623 /* ViewController.m in Sources */,
+				8619AB201F605FB80093B0B8 /* GPXRoute.m in Sources */,
 				86005AE71F6046330085B623 /* main.m in Sources */,
+				8619AB221F605FB80093B0B8 /* GPXWaypoint.m in Sources */,
+				8619AB1F1F605FB80093B0B8 /* GPXParser.m in Sources */,
 				86005AE41F6046330085B623 /* AppDelegate.m in Sources */,
+				8619AB211F605FB80093B0B8 /* GPXTrack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "GPX Combiner/GPX Combiner.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 27PHVB8UWB;
 				INFOPLIST_FILE = "GPX Combiner/Info.plist";
@@ -273,6 +315,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "GPX Combiner/GPX Combiner.entitlements";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 27PHVB8UWB;
 				INFOPLIST_FILE = "GPX Combiner/Info.plist";
@@ -301,6 +344,7 @@
 				86005AF51F6046330085B623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

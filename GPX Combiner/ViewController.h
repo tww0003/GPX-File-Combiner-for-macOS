@@ -7,9 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <MapKit/MapKit.h>
+#import "GPXKit.h"
+#import "GPXTrack.h"
 
-@interface ViewController : NSViewController
+@interface ViewController : NSViewController <MKMapViewDelegate>
 
+@property IBOutlet MKMapView *mapView;
+- (IBAction) openGPXFiles:(id) sender;
+- (IBAction) saveGPXFile:(id) sender;
 
 @end
 
